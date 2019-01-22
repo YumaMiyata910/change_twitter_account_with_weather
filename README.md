@@ -1,4 +1,4 @@
-# Change Twitter Account With Weathre Emoji!
+# Change Twitter Account With Weather Emoji!
 
 ### 前提
 - Python3系
