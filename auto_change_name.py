@@ -4,12 +4,13 @@ from requests_oauthlib import OAuth1Session
 import emoji
 import requests
 import json
+import os
 
-CK = 'XXXXXXXXXXXXXXXXXXXXXXXXX'                     # Consumer Key
-CS = 'XXXXXXXXXXXXXXXXXXXXXXXXX'                     # Consumer Secret
-AT = 'XXXXXXXXXXXXXXXXXXXXXXXXX'                     # Access Token
-AS = 'XXXXXXXXXXXXXXXXXXXXXXXXX'                     # Accesss Token Secert
-WEATHER_APP_ID = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"  # Open Weathre Map API Key
+CK = os.environ.get('CK')                          # Consumer Key
+CS = os.environ.get('CS')                          # Consumer Secret
+AT = os.environ.get('AT')                          # Access Token
+AS = os.environ.get('AS')                          # Accesss Token Secert
+WEATHER_APP_ID = os.environ.get('WEATHER_APP_ID')  # Open Weathre Map API Key
 
 # アカウント名変更用のURL
 TWITTER_API_URL = 'https://api.twitter.com/1.1/account/update_profile.json'
